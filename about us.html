@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Prevent zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+  <title>About Us | Simple Print</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: #111;
+      padding: 15px 20px;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #ff9800;
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                  url('images/about-bg.jpg') center/contain no-repeat;
+      background-color: #000;
+      padding: 70px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    /* ===== CONTENT ===== */
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    section h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #ff9800;
+      text-align: center;
+    }
+
+    section p {
+      font-size: 15px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    /* ===== VALUES ===== */
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,.1);
+      text-align: center;
+    }
+
+    .card h4 {
+      margin-bottom: 8px;
+      font-size: 17px;
+      color: #111;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    /* ===== GALLERY ===== */
+    .about-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .about-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.15);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    /* ===== MOBILE TWEAKS ===== */
+    @media (max-width: 480px) {
+      nav h1 {
+        font-size: 20px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      section h3 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Simple Print</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html#services">Services</a></li>
+      <li><a href="home.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>About Simple Print</h2>
+  <p>Your trusted printing & creative partner</p>
+</div>
+
+<section>
+  <h3>Who We Are</h3>
+  <p>
+    <strong>Simple Print</strong> is a creative printing brand dedicated to bringing ideas to life through quality prints and professional finishing. We specialize in monogram branding, tailoring support, DTF & borderless printing, flex & silicone heat transfers, and graphic design services.
+  </p>
+
+  <p>
+    We are <strong>committed to providing you with the highest quality printing, custom-made gifts, souvenirs, and unmatched customer service</strong>. Every project is handled with care, precision, and attention to detail.
+  </p>
+</section>
+
+<section>
+  <h3>Why Choose Us</h3>
+
+  <div class="values">
+    <div class="card">
+      <h4>Quality First</h4>
+      <p>Clean, durable, and professional prints using trusted materials.</p>
+    </div>
+
+    <div class="card">
+      <h4>Creative Expertise</h4>
+      <p>Unique designs and proper finishing that stand out.</p>
+    </div>
+
+    <div class="card">
+      <h4>Customer Satisfaction</h4>
+      <p>We listen, advise, and deliver beyond expectations.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Inside Simple Print</h3>
+  <p>
+    A glimpse into our workspace, printing process, and the quality results we deliver.
+  </p>
+
+  <div class="about-gallery">
+    <img src="images/232fea1e333d44f6b3311fb6a203541a.jpg" alt="Simple Print Workshop">
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Simple Print. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

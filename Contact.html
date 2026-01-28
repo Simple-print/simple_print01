@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- STOP ZOOM -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+  <title>Contact Us | Simple Print</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      padding: 15px 20px;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #ff9800;
+      font-size: 22px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .contact-page {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .contact-page h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 6px;
+    }
+
+    .contact-page p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    }
+
+    .box h3 {
+      color: #ff9800;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    /* CONTACT DETAILS */
+    .contact-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .contact-details a {
+      background: #f9f9f9;
+      padding: 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #222;
+      font-size: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    }
+
+    .contact-details a span {
+      display: block;
+      font-size: 13px;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    /* SERVICES */
+    .list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .list div {
+      background: #f9f9f9;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    /* FORM */
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    form button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      background: #ff9800;
+      color: #000;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
+      z-index: 1000;
+    }
+
+    .whatsapp-float svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Simple Print</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="contact-page">
+  <h2>Contact Simple Print</h2>
+  <p>Reach us instantly or send a message directly to WhatsApp</p>
+
+  <!-- CONTACT INFO -->
+  <div class="box">
+    <h3>Contact Information</h3>
+    <div class="contact-details">
+
+      <!-- PHONE -->
+      <a href="tel:+2349165500664">
+        📞 Phone Number
+        <span>+234 916 550 0664</span>
+      </a>
+
+      <!-- EMAIL -->
+      <a href="mailto:simpleprint@gmail.com">
+        📧 Email Address
+        <span>simpleprint@gmail.com</span>
+      </a>
+
+      <!-- WHATSAPP -->
+      <a href="https://wa.me/2349165500664">
+        💬 WhatsApp Chat
+        <span>Click to chat with us</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="box">
+    <h3>What We Offer</h3>
+    <div class="list">
+      <div>DTF & Borderless Printing</div>
+      <div>Customized T-Shirts & Jerseys</div>
+      <div>Monogram Branding</div>
+      <div>Sublimation Printing</div>
+      <div>Frames, Gifts & Souvenirs</div>
+      <div>Graphic Design Services</div>
+    </div>
+  </div>
+
+  <!-- MESSAGE FORM -->
+  <div class="box">
+    <h3>Send Us a Message</h3>
+
+    <form onsubmit="sendToWhatsApp(); return false;">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <textarea id="message" placeholder="What do you want to print?" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Simple Print. All Rights Reserved.</p>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/2349165500664" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path fill="white" d="M16.02 3C9.39 3 4 8.39 4 15.02c0 2.65.86 5.1 2.32 7.08L5 29l7.09-1.86c1.9 1.04 4.08 1.64 6.43 1.64 6.63 0 12.02-5.39 12.02-12.02C30.54 8.39 22.65 3 16.02 3z"/>
+  </svg>
+</a>
+
+<script>
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    const phoneNumber = "2349165500664";
+
+    const text =
+      `Hello Simple Print,%0A%0A` +
+      `My name is ${name}.%0A%0A` +
+      `${message}`;
+
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, "_blank");
+  }
+</script>
+
+</body>
+</html>
