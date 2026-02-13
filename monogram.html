@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Print | Monogram Printing</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      position: relative;
+      padding: 80px 20px;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      opacity: 0.9;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .steps {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .step {
+      background: #fff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      font-size: 14px;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      margin-top: 40px;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 22px; }
+      nav a { margin-left: 10px; font-size: 13px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Simple Print</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="#order">How to Order</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline>
+      <source src="media/monogram.mp4" type="video/mp4">
+    </video>
+
+    <h1>Custom Monogram Printing</h1>
+    <p>Elegant personalized initials for gifts, birthdays, weddings, and special moments. Designed with style and printed with care by Simple Print.</p>
+
+    <a href="https://wa.me/2349165500664" class="btn" target="_blank">Order on WhatsApp</a>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2 class="section-title">Sample Monograms</h2>
+    <div class="gallery">
+      <img src="images/monogram.png" alt="Monogram sample">
+      <img src="images/2.png" alt="Monogram sample">
+      <img src="https://via.placeholder.com/300x300" alt="Monogram sample">
+      <img src="https://via.placeholder.com/300x300" alt="Monogram sample">
+    </div>
+  </section>
+
+  <!-- How to Order -->
+  <section id="order">
+    <h2 class="section-title">How to Order</h2>
+    <div class="steps">
+      <div class="step">1. Send your initials and preferred design style.</div>
+      <div class="step">2. Choose your print size and material.</div>
+      <div class="step">3. Confirm price and make payment.</div>
+      <div class="step">4. Your monogram will be printed and delivered.</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Simple Print</h2>
+    <p style="text-align:center; font-size:14px;">
+      WhatsApp: 📞 +234 916 550 0664 <br>
+      Email: simpleprint@email.com
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Simple Print. All rights reserved.
+  </footer>
+  <!-- Fake Live Notification -->
+  <div id="liveNotification" style="position:fixed; bottom:20px; left:20px; background:#000; color:#fff; padding:14px 18px; border-radius:14px; font-size:13px; box-shadow:0 8px 25px rgba(0,0,0,0.35); display:none; z-index:9999; animation:slideUp 0.4s ease;">
+    <span>Someone just requested a monogram design ✨</span>
+    <button onclick="closeNotification()" style="margin-left:12px; background:none; border:none; color:#fff; font-size:16px; cursor:pointer;">×</button>
+  </div>
+
+  <style>
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+
+  <script>
+    function showNotification() {
+      const note = document.getElementById('liveNotification');
+      note.style.display = 'flex';
+      note.style.alignItems = 'center';
+
+      clearTimeout(window.hideTimer);
+      window.hideTimer = setTimeout(() => {
+        note.style.display = 'none';
+      }, 5000);
+    }
+
+    function closeNotification() {
+      const note = document.getElementById('liveNotification');
+      note.style.display = 'none';
+      clearTimeout(window.hideTimer);
+    }
+
+    // Show notification randomly every 15–25 seconds
+    setInterval(() => {
+      showNotification();
+    }, Math.floor(Math.random() * 10000) + 15000);
+
+    // First notification after 5 seconds
+    setTimeout(showNotification, 5000);
+  </script>
+</body>
+</html>
